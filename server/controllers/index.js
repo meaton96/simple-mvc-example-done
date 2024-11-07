@@ -364,6 +364,7 @@ const updateLastDog = async (req, res) => {
       return res.status(404).json({ error: 'Dog not found' });
     }
 
+    
     return res.json({
       name: doc.name,
       age: doc.age,
